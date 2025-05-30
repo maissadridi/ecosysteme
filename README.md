@@ -2,11 +2,17 @@
 Une simulation en C++/SFML d’un écosystème prédateur-proie avec des loups, des moutons, de l’herbe et des minéraux.
 
 Fonctionnalités
+
 🐑 Moutons qui mangent de l’herbe
+
 🐺 Loups qui chassent les moutons
+
 🌱 Herbe qui repousse grâce aux minéraux
+
 ⚖️ Dynamique d’écosystème équilibrée
+
 🎨 Interface visuelle avec SFML
+
 📊 Suivi des statistiques en temps réel
 
 Prérequis
