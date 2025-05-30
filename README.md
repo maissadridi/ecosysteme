@@ -1,7 +1,7 @@
 # Simulation d'Écosystème
 Une simulation en C++/SFML d’un écosystème prédateur-proie avec des loups, des moutons, de l’herbe et des minéraux.
 
-Fonctionnalités
+### Fonctionnalités
 
 🐑 Moutons qui mangent de l’herbe
 
@@ -15,7 +15,7 @@ Fonctionnalités
 
 📊 Suivi des statistiques en temps réel
 
-Prérequis
+### Prérequis
 C++14 ou version plus récente
 
 Bibliothèque SFML
