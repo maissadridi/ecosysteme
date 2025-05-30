@@ -1,24 +1,20 @@
-# Ecosystem Simulation
+# Simulation d'Écosystème
+Une simulation en C++/SFML d’un écosystème prédateur-proie avec des loups, des moutons, de l’herbe et des minéraux.
 
-A C++/SFML simulation of a predator-prey ecosystem with wolves, sheep, grass, and minerals.
+Fonctionnalités
+🐑 Moutons qui mangent de l’herbe
+🐺 Loups qui chassent les moutons
+🌱 Herbe qui repousse grâce aux minéraux
+⚖️ Dynamique d’écosystème équilibrée
+🎨 Interface visuelle avec SFML
+📊 Suivi des statistiques en temps réel
 
-![Ecosystem Simulation Screenshot](screenshot.png)
+Prérequis
+C++14 ou version plus récente
 
-## Features
+Bibliothèque SFML
 
-- 🐑 Sheep that eat grass
-- 🐺 Wolves that hunt sheep
-- 🌱 Grass that regrows with minerals
-- ⚖️ Balanced ecosystem dynamics
-- 🎨 Visual interface with SFML
-- 📊 Real-time statistics tracking
-
-## Requirements
-
-- C++14 or newer
-- SFML library
-- Git (for version control)
-
+Git (pour le contrôle de version)
 ## Installation
 
 ### Linux (WSL/Ubuntu)
