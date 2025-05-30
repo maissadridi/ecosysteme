@@ -11,11 +11,11 @@
 // Constantes
 const int TAILLE_CASE = 30;
 const int DUREE_MOUTON = 50;
-const int DUREE_LOUP = 60;
+const int DUREE_LOUP = 80;
 const int FAIM_MOUTON = 5;
 const int FAIM_LOUP = 10;
 const int ENERGIE_REPRODUCTION_MOUTON = 50;
-const int ENERGIE_REPRODUCTION_LOUP = 70;
+const int ENERGIE_REPRODUCTION_LOUP = 50;
 
 // Couleurs
 const sf::Color COULEUR_HERBE(34, 139, 34);
@@ -209,7 +209,7 @@ public:
         if (enceinte) return; // Ne pas se déplacer si enceinte
         
         // Déplacement plus intelligent vers les moutons si affamé
-        if (getToursSansManger() > 7) {
+        if (getToursSansManger() > 2) {
             // Cherche les moutons dans un rayon plus large
             for (int dx = -2; dx <= 2; dx++) {
                 for (int dy = -2; dy <= 2; dy++) {
@@ -332,6 +332,7 @@ public:
         // Ajouter des loups
         for (int i = 0; i < nbLoups; i++) {
             ajouterLoup(rand() % tailleX, rand() % tailleY, (rand() % 2) ? 'M' : 'F');
+            
         }
     }
     
@@ -394,7 +395,10 @@ public:
             [&](const std::unique_ptr<Entite>& e) {
                 if (e->doitMourir()) {
                     if (e->getType() == "Mouton") mortsMoutons++;
-                    else mortsLoups++;
+                  //  else mortsLoups++;
+                  else  {
+                    std::cout << "Faim: " << e->getFaim() << std::endl;
+                }
                     return true;
                 }
                 return false;
@@ -428,7 +432,6 @@ public:
             // Afficher le sexe
             sf::Text sexeText;
             sf::Font font;
-            font.loadFromFile("arial.ttf"); // Assurez-vous d'avoir une police ou utilisez une police par défaut
             sexeText.setFont(font);
             sexeText.setString(std::string(1, entite->getSexe()));
             sexeText.setCharacterSize(12);
@@ -441,7 +444,7 @@ public:
         }
         
         // Afficher les informations
-        afficherInfos(window);
+       // afficherInfos(window);
     }
     
     void afficherInfos(sf::RenderWindow& window) {
@@ -591,7 +594,7 @@ int main() {
     window.setFramerateLimit(60);
     
     Univers univers(TAILLE_UNIVERS_X, TAILLE_UNIVERS_Y);
-    univers.initialiser(20, 5);
+    univers.initialiser(20, 30);
     
     sf::Clock clock;
     float tempsEcoule = 0;
