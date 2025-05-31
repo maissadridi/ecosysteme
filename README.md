@@ -65,9 +65,10 @@ Ce rapport présente une analyse détaillée du code source d'une simulation d'�
     - Mécanismes de régulation populationnelle
   
 ## 5. Démonstration 
+[Voir la vidéo (MP4)](./Ecosysteme demo.mp4)
 
 
-## 5. Améliorations Possibles
+## 6. Améliorations Possibles
 
 1. **Optimisation des Performances** :
     - Utilisation de structures spatiales (quadtree) pour les collisions
