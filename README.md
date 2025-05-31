@@ -2,7 +2,8 @@
 Une simulation en C++/SFML d’un écosystème prédateur-proie avec des loups, des moutons, de l’herbe et des minéraux.
 
 ## Démo
-![Démo du projet](demo.gif)
+![ecosystem demo](https://github.com/user-attachments/assets/4b0468ce-6841-4999-b80a-629e0975f453)
+
 
 ## 1. Introduction
 Ce rapport présente une analyse détaillée du code source d'une simulation d'écosystème implémentant le principe de proie-prédateur (moutons-loups) avec des mécanismes de reproduction, de nutrition et de mortalité.
