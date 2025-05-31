@@ -98,7 +98,7 @@ sudo apt-get install g++ libsfml-dev
 Clone the repository:
 
 ```
-git clone https://github.com/yourusername/ecosystem-simulation.git
+git clone https://github.com/maissadridi/ecosysteme.git
 cd ecosystem-simulation
 ```
 Compile:
