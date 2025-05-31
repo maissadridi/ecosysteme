@@ -2,7 +2,7 @@
 Une simulation en C++/SFML d’un écosystème prédateur-proie avec des loups, des moutons, de l’herbe et des minéraux.
 
 ## Démo
-
+(assets/demo.gif)
 
 ## 1. Introduction
 Ce rapport présente une analyse détaillée du code source d'une simulation d'écosystème implémentant le principe de proie-prédateur (moutons-loups) avec des mécanismes de reproduction, de nutrition et de mortalité.
@@ -63,12 +63,10 @@ Ce rapport présente une analyse détaillée du code source d'une simulation d'�
 4. **Équilibre Écologique** :
     - Paramètres ajustables pour les constantes de simulation
     - Mécanismes de régulation populationnelle
-  
-## 5. Démonstration 
-[Voir la vidéo (MP4)](./Ecosysteme demo.mp4)
 
 
-## 6. Améliorations Possibles
+
+## 5. Améliorations Possibles
 
 1. **Optimisation des Performances** :
     - Utilisation de structures spatiales (quadtree) pour les collisions
