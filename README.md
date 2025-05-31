@@ -108,7 +108,7 @@ cd ecosystem-simulation
 Compile:
 
 ```
-g++ -std=c++14 main.cpp -o ecosystem -lsfml-graphics -lsfml-window -lsfml-system
+g++ -std=c++14 proj.cpp -o ecosystem -lsfml-graphics -lsfml-window -lsfml-system
 ```
 
 ##  Conclusion
